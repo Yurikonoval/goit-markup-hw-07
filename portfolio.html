@@ -8,11 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -55,13 +51,13 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="section-title hidden">Портфолио</h1>
+          <h1 class="section-title">Портфолио</h1>
           <div class="filter-nav">
-            <button class="portfolio-filter" type="button">Все</button>
-            <button class="portfolio-filter" type="button">Веб-сайты</button>
-            <button class="portfolio-filter" type="button">Приложения</button>
-            <button class="portfolio-filter" type="button">Дизайн</button>
-            <button class="portfolio-filter" type="button">Маркетинг</button>
+            <button class="filter" type="button">Все</button>
+            <button class="filter" type="button">Веб-сайты</button>
+            <button class="filter" type="button">Приложения</button>
+            <button class="filter" type="button">Дизайн</button>
+            <button class="filter" type="button">Маркетинг</button>
           </div>
 
           <ul class="list">
@@ -338,7 +334,7 @@
         <div class="subscribe">
           <b class="footer-title">Подпишитесь на рассылку</b>
           <div class="footer-form-subscribe">
-            <form class="footer-form" action=""></form>
+            <form class="footer-form" action="">
               <label for="">
                 <input
                   class="footer-form-input"
@@ -348,12 +344,13 @@
                   placeholder="E-mail"
                 />
               </label>
+
+              <button class="button">
+                Подписаться<svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
-            <button class="button">
-              Подписаться<svg class="icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>

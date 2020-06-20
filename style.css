@@ -71,9 +71,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-header {
-  color: var(--primary-text-color);
-}
 
 .nav .link {
   color: inherit;
@@ -464,9 +461,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
 }
-.subscribe {
-  margin-left: auto;
-}
+
 .join-us .link {
   display: flex;
   justify-content: center;
@@ -507,7 +502,9 @@ img {
 .footer-form-input:focus-within {
   outline: none;
 }
-
+.subscribe {
+  margin-left: auto;
+}
 .subscribe .icon {
   margin-left: 10px;
 }
@@ -517,7 +514,7 @@ img {
   padding: 10px 29px;
   margin-left: 12px;
 }
-.footer-form-subscribe {
+.footer-form {
   display: flex;
   flex-direction: row;
 }
@@ -566,30 +563,7 @@ img {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.form-submit {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.modal-close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(+50%, -50%);
 
-  width: 30px;
-  height: 30px;
-
-  border-radius: 50%;
-  background-color: var(--white-color);
-  background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: transparent;
-
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-}
 .form {
   padding: 40px;
 }
@@ -729,6 +703,30 @@ img {
 }
 .contract-terms {
   color: var(--accent-color);
+}
+.form-submit {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.modal-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(+50%, -50%);
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background-color: var(--white-color);
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: transparent;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 /* portfolio main */
 .portfolio {
