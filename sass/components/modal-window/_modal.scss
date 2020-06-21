@@ -29,10 +29,20 @@
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
   }
-  & .close-button {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
+  & .close-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    fill: $primary-text-color;
+
+    transition: fill 250ms $cubic;
+  }
+  & .modal-close-button:hover .close-icon,
+  & .modal-close-button:focus .close-icon {
+    fill: $accent-color;
   }
 
   & .form-submit {
@@ -40,4 +50,7 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+  // & .form-submit:hover {
+  //   background-color: $button-hover;
+  // }
 }
